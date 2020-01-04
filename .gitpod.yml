@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced@0.5.0:NvzH3QcCuRpKCWQ9++Vc9g==
+    - vscjava.vscode-maven@0.20.1:gdyOPlzH3PU5IkrigIg85g==
