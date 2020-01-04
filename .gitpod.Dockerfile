@@ -19,8 +19,8 @@ RUN wget -O .mvn_bash_completion https://raw.githubusercontent.com/natros/maven-
 && echo 'alias osgi_ds="mvn org.apache.maven.plugins:maven-archetype-plugin:3.0.1:generate -DarchetypeGroupId=org.osgi.enroute.archetype -DarchetypeArtifactId=ds-component -DarchetypeVersion=7.0.0"' >> ~/.bashrc \
 && echo 'alias osgi_app="mvn org.apache.maven.plugins:maven-archetype-plugin:3.0.1:generate -DarchetypeGroupId=org.osgi.enroute.archetype -DarchetypeArtifactId=application -DarchetypeVersion=7.0.0"' >> ~/.bashrc \
 && echo 'alias osgi_projectbare="mvn org.apache.maven.plugins:maven-archetype-plugin:3.0.1:generate -DarchetypeGroupId=org.osgi.enroute.archetype -DarchetypeArtifactId=project-bare -DarchetypeVersion=7.0.0"' >> ~/.bashrc \
-&& echo 'alias java_run="java -jar "' >> ~/.bashrc \
-&& echo 'alias java_debug="java -jar -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y "' >> ~/.bashrc \
+&& echo 'alias run="java -jar "' >> ~/.bashrc \
+&& echo 'alias debug="java -jar -Xdebug -Xrunjdwp:transport=dt_socket,address=5858,server=y,suspend=y "' >> ~/.bashrc \
 && echo 'osgi_resolve(){ mvn -pl "$1" -am bnd-indexer:index bnd-indexer:index@test-index bnd-resolver:resolve; }' >> ~/.bashrc \
 && echo 'source ~/.mvn_bash_completion' >> ~/.bashrc \
 
